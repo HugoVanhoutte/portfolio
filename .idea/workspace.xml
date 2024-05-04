@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44f1c122-07c5-4e3c-a92b-f3bc0384dc84" name="Changes" comment="first commit" />
+    <list default="true" id="44f1c122-07c5-4e3c-a92b-f3bc0384dc84" name="Changes" comment="public - deletion">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,8 +46,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\thehu\PhpstormProjects\portfolioa" />
       <recent name="C:\Users\thehu\PhpstormProjects\portfolio" />
+      <recent name="C:\Users\thehu\PhpstormProjects\portfolioa" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -63,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1714818032418</updated>
       <workItem from="1714818034634" duration="360000" />
-      <workItem from="1714818411223" duration="1054000" />
+      <workItem from="1714818411223" duration="2780000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -73,7 +76,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714818923743</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="public - deletion">
+      <option name="closed" value="true" />
+      <created>1714819905960</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714819905960</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,6 +92,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="public - deletion" />
+    <option name="LAST_COMMIT_MESSAGE" value="public - deletion" />
   </component>
 </project>
