@@ -1,0 +1,257 @@
+/* RESET CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*FIN RESET CSS*/
+/*CALIBRAGE PX/REM*/
+html {
+    font-size: 62.5%;
+}
+/*FIN CALIBRAGE PX/REM*/
+
+body{
+    width: 80vw;
+    height: 80vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: #c9c9c9;
+    font-family: Raleway, sans-serif;
+    color: white;
+}
+
+#container {
+    width: 120rem;
+    height: 60rem;
+
+    margin: 10rem;
+
+    display: grid;
+
+    grid-template-rows: repeat(2, 30rem);
+    grid-template-columns: repeat(4, 30rem);
+    grid-template-areas:    "photo main main cv"
+                            "photo portfolio github linkedin";
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+i {
+    margin: .25rem;
+}
+
+.tile {
+    display: flex;
+    flex-flow: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    text-decoration: none;
+}
+
+.tile:hover {
+    transform: scale(103%);
+}
+
+#photo {
+    grid-area: photo;
+
+    background-image: url("images/Photo_1x2.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    transform: none;
+}
+
+#name {
+    grid-area: main;
+
+    background-color: #35bc7a;
+}
+
+.name-link {
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+
+
+    border: white 1px solid;
+
+    padding: .5rem 1.5rem .5rem .5rem;
+
+    margin-top: 1rem;
+    margin-left: 2rem;
+
+    transition: border, color;
+    transition-duration: .4s;
+
+}
+
+.name-link:hover {
+    border: #d5d5d5 1px solid;
+    color: #d5d5d5;
+}
+
+#name h1{
+    font-size: 4rem;
+    margin: 2rem;
+}
+
+#name h2 {
+    margin: 2rem;
+    font-size: 2rem;
+}
+
+#name p {
+    font-size: 1.5rem;
+}
+
+#name i {
+    margin: 1rem;
+}
+
+.tile h1 {
+    font-size: 3rem;
+}
+
+
+
+#cv {
+    grid-area: cv;
+
+    background-color: #faab00;
+}
+
+#github {
+    grid-area: github;
+
+    background-color: #0d1117;
+}
+
+#portfolio {
+    grid-area: portfolio;
+
+    background-color: #f86925;
+}
+
+#linkedin {
+    grid-area: linkedin;
+
+    background-color: #0a66c2;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+        align-items: flex-start;
+        width: 100vw;
+    }
+
+    #container {
+        width: 100vw;
+        height: 200vw;
+        margin: 0;
+
+        grid-template-columns: repeat(2, 50vw);
+        grid-template-rows: repeat(4, 50vw);
+        grid-template-areas:    "photo cv"
+                                "photo portfolio"
+                                "main main"
+                                "github linkedin";
+    }
+
+    .tile h1 {
+        font-size: 2rem;
+    }
+
+    .tile i {
+        font-size: 2rem;
+    }
+
+    #name {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #name h1 {
+        font-size: 3rem;
+        margin: .5rem;
+    }
+
+    #name h2 {
+        font-size: 1rem;
+        margin: .5rem;
+    }
+
+    #links {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .name-link {
+        padding: .25rem .75rem .25rem .25rem;
+    }
+}

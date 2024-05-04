@@ -1,0 +1,188 @@
+/* RESET CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*FIN RESET CSS*/
+/*CALIBRAGE PX/REM*/
+html {
+    font-size: 62.5%;
+}
+
+/*FIN CALIBRAGE PX/REM*/
+
+:root{
+    /*https://coolors.co/441151-883677-ca61c3-ee85b5-ff958c*/
+    --russian-violet: #441151ff;
+    --plum: #883677ff;
+    --french-mauve: #ca61c3ff;
+    --persian-pink: #ee85b5ff;
+    --coral-pink: #ff958cff;
+}
+
+body{
+    position: fixed;
+    background-color: var(--plum);
+}
+
+#container {
+    font-family: Calibri, sans-serif;
+
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+header {
+    height: 25%;
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--russian-violet);
+    font-size: 3rem;
+    font-family: Calibri,sans-serif;
+}
+
+header button {
+    height: 5rem;
+    width: 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10rem;
+    border: solid 0.25rem var(--russian-violet);
+
+    background-color: var(--coral-pink);
+    color: var(--russian-violet);
+}
+
+main {
+    height: 73vh;
+    width: 73vh;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.card {
+    background-color: var(--coral-pink);
+    height: 23%;
+    width: 23%;
+    border: solid 0.25rem var(--russian-violet);
+    border-radius: 2rem;
+}
+
+.red.flipped {
+    background-color: orange;
+}
+
+.blue.flipped {
+    background-color:blue;
+}
+
+.green.flipped {
+    background-color:green;
+}
+
+.yellow.flipped {
+    background-color:yellow;
+}
+
+.white.flipped {
+    background-color:white;
+}
+
+.black.flipped {
+    background-color:black;
+}
+
+.grey.flipped {
+    background-color:grey;
+}
+
+.brown.flipped {
+    background-color: brown;
+}
+
+#end {
+    height: 71.7vh;
+    width: 71.5vh;
+
+    position: fixed;
+    z-index: 20;
+    background-color: rgba(255, 149, 140, 0.5);
+    color: var(--russian-violet);
+    border: var(--russian-violet) solid 0.25rem;
+    border-radius: 2rem;
+
+    text-align: center;
+    font-size: 3rem;
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        width: 100vw;
+        height: 100vw;
+    }
+}

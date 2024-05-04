@@ -1,0 +1,295 @@
+/* RESET CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*FIN RESET CSS*/
+/*CALIBRAGE PX/REM*/
+html {
+    font-size: 62.5%;
+}
+
+/*FIN CALIBRAGE PX/REM*/
+:root {
+    /*https://coolors.co/ad343e-474747-f2af29-000000-e0e0ce*/
+
+    --background-color: #E0E0CE;
+    --button-color: #F2AF29;
+    --text-and-border-color: #474747;
+}
+
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Raleway', sans-serif;
+
+    position: fixed; /*Disable scroll*/
+    color: var(--text-and-border-color);
+}
+#container { /*Container: 100% of screen on width and height*/
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-flow: column;
+}
+
+button {
+    width: 100%;
+
+    color: var(--text-and-border-color);
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--button-color);
+
+    border: .5rem solid var(--text-and-border-color);
+    border-radius: 10rem;
+}
+
+button:active {
+    background-color: #d99d22;
+    box-shadow: inset #ab7c19 .35rem .35rem;
+}
+
+#topPart {
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    height: 60%;
+    width: 100%;
+}
+
+#leftPanel {
+
+    display: flex;
+    flex-flow: column wrap;
+
+    height: 100%;
+    width: 20%;
+}
+#buttonDiv {
+    display: flex;
+    flex-flow: column wrap;
+
+    width: 100%;
+    height: 20%;
+}
+
+#buttonDiv button {
+    font-size: 5rem;
+    height: 100%;
+
+}
+
+/*Hidden in desktop mode*/
+#historyButton {
+    display: none;
+}
+
+#leftPanel h2 {
+    width: 100%;
+    height: 20%;
+
+    font-size: 3rem;
+    text-align: center;
+}
+
+#centralPanel {
+    width: 60%;
+    height: 100%;
+
+    display: flex;
+    flex-flow: column;
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*Flag: Appears at game start*/
+#centralPanel img {
+    height: auto;
+    width: 50%;
+
+    max-height: 100%;
+
+    display: none;
+}
+
+/*Final score text: Appears at game end*/
+h1 {
+    display: none;
+
+    font-size: 10rem;
+    text-align: center;
+}
+
+#rightPanel {
+    height: 100%;
+    width: 20%;
+
+    font-size: 2rem;
+    line-height: 1;
+    text-align: center;
+
+    overflow-x: scroll;
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+#rightPanel::-webkit-scrollbar {
+    display: none;
+}
+
+
+#rightPanel h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+/*Possibilities: hidden before game start*/
+#bottomPart {
+    height: 40%;
+
+    position: relative;
+    bottom: 0;
+
+    display: flex;
+    flex-flow: column;
+
+    justify-content: space-between;
+
+    visibility: hidden;
+}
+
+.answer {
+    height: 23%;
+
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    /*Media query tablets*/
+    #container {
+        height: 100vh;
+        width: 100vw;
+    }
+    #topPart {
+        flex-flow: column;
+        height: 60%;
+        width: 100%;
+    }
+    #leftPanel {
+        flex-flow: row;
+        width: 100%;
+        height: 20%;
+    }
+    #buttonDiv {
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+        width: 10%;
+    }
+    #buttonDiv button {
+        display: block;
+        height: 50%;
+        font-size: 1.5rem;
+    }
+    #historyButton {
+        display: block;
+    }
+    #score {
+        order: -1;
+        width: 45%;
+    }
+    #counter {
+        width: 45%;
+    }
+
+    #centralPanel {
+        width: 100%;
+        height: 100%;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+
+    #rightPanel {
+        display: none;
+        align-self: center;
+        position: fixed;
+        top: 10%;
+
+        height: 85%;
+        width: 90%;
+
+        /*Always displayed on top*/
+        z-index: 1000;
+
+        background-color: var(--button-color);
+
+        border-radius: 5rem;
+        border: 1rem solid var(--text-and-border-color);
+    }
+
+    #bottomPart {
+        height: 40%;
+        width: 100%;
+    }
+    .answer {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    /*Media query smaller screens*/
+    #centralPanel img {
+        width: 75%;
+    }
+}

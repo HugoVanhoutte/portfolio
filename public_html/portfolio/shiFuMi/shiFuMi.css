@@ -1,0 +1,178 @@
+/* RESET CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*FIN RESET CSS*/
+/*CALIBRAGE PX/REM*/
+html {
+    font-size: 62.5%;
+}
+
+/*FIN CALIBRAGE PX/REM*/
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Press Start 2P', monospace;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*font-family: Calibri, sans-serif;*/
+    text-align: center;
+}
+
+header h1 {
+    font-size: xxx-large;
+    margin: 3rem;
+}
+
+header h2 {
+    font-size: xx-large;
+}
+
+header p {
+    font-size: xxx-large;
+    font-family: 'Press Start 2P', monospace;
+    margin: 5rem;
+}
+
+header p #user-score {
+    color: green;
+}
+
+header p #computer-score {
+    color: red;
+}
+
+
+
+#game {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 65%;
+    margin-top: 5rem;
+}
+#game section {
+    display: flex;
+    width: 50%;
+}
+
+#game #user-choice {
+    justify-content: flex-start;
+}
+
+#game #computer-choice {
+    justify-content: flex-end;
+}
+
+#game section .choice {
+    width: 10rem;
+    height: 10rem;
+    margin: .5rem;
+    border: black 2px dashed;
+    border-radius: 15px;
+    background-color: azure;
+    font-family: 'Press Start 2P', monospace;
+}
+
+
+#game #user-choice .choice:hover {
+    background-color: #d4fcfc;
+    cursor: pointer;
+}
+#game #user-choice .choice:active {
+    box-shadow: grey inset 3px 3px;
+    background-color: #a7e3e3;
+}
+
+#game #computer-choice .choice:hover {
+    cursor: not-allowed;
+}
+
+#reset-score {
+    border: black 2px solid;
+    width: 10rem;
+    height: 5rem;
+    border-radius: 15px;
+    background-color: azure;
+}
+#reset-score:hover {
+    background-color: #d4fcfc;
+    cursor: pointer;
+}
+#reset-score:active {
+    box-shadow: grey inset 3px 3px;
+    background-color: #a7e3e3;
+}
+
+
+@media screen and (max-width: 1000px) {
+    #game {
+        flex-direction: column;
+    }
+    #game #user-choice {
+        justify-content: center;
+    }
+    #game #computer-choice {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #game {
+        width: 100%;
+    }
+    #game section {
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Viewport tag for responsive design-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <!--Font Awesome (small pictures)-->
+    <script src="https://kit.fontawesome.com/9010a17673.js" crossorigin="anonymous"></script>
+    <!--Site Icon-->
+    <link rel="shortcut icon" type="image/png" href="../../images/favico.ico"/>
+    <!--CSS stylesheet-->
+    <link rel="stylesheet" href="quiz.css">
+    <title>Quiz Drapeau</title>
+</head>
+<body>
+
+
+<div id="container"><!--Container: everything MUST go inside-->
+    <div id="topPart"><!--Top part: left panel, central panel and right panel-->
+        <div id="leftPanel"><!--Left panel: play button, score and counter-->
+            <div id="buttonDiv">
+                <button id="startButton"><i class="fa-solid fa-play"></i></button><!--Start Button-->
+                <button id="historyButton"><i class="fa-solid fa-bars"></i></button><!--History Button (Mobile only)-->
+            </div>
+            <h2 id="score">Score:<br><span id="scoreNum">0</span>/10</h2><!--Score-->
+            <h2 id="counter">Question:<br><span id="counterNum">0</span>/10</h2><!--Counter-->
+        </div>
+        <div id="centralPanel"><!--Central panel: Flag-->
+            <img src="" alt="Drapeau à deviner"><!--Flag to guess-->
+            <h1></h1>
+        </div>
+        <div id="rightPanel"><!--Right panel: history-->
+            <h2>Historique: </h2>
+            <ul id="historyList"><!--History-->
+
+            </ul>
+        </div>
+    </div>
+
+    <div id="bottomPart"><!-- Bottom part: answers-->
+        <button id="answer1" class="answer"></button>
+        <button id="answer2" class="answer"></button>
+        <button id="answer3" class="answer"></button>
+        <button id="answer4" class="answer"></button>
+    </div>
+</div>
+
+
+
+
+
+
+<script src="../../libs/jQuery.js"></script>
+<script src="quiz.js"></script>
+</body>
+</html>

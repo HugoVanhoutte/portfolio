@@ -1,0 +1,64 @@
+#container {
+    width: 90rem;
+    height: 60rem;
+
+    display: grid;
+
+    grid-template-rows: repeat(2 , 50%);
+    grid-template-columns: repeat(3 , 33%);
+
+    grid-template-areas:    "back desc drapeau"
+                            "memory shiFuMi meteo";
+
+}
+
+#drapeau {
+    grid-area: drapeau;
+
+    background-color: #f15a49;
+}
+
+#memory {
+    grid-area: memory;
+
+    background-color: #f86925;
+}
+
+#shiFuMi {
+    grid-area: shiFuMi;
+
+    background-color: #35bc7a;
+}
+
+#meteo {
+    grid-area: meteo;
+
+    background-color: #faab00;
+}
+
+#desc {
+    grid-area: desc;
+
+    background-color: #1e8bc4;
+    transform: none;
+}
+
+#back {
+    grid-area: back;
+
+    background-color: #0d1117;
+}
+
+@media screen and (max-width: 768px) {
+
+    #container {
+        height: 150vw;
+
+        grid-template-columns: repeat(2, 50vw);
+        grid-template-rows: repeat(3, 50vw);
+        grid-template-areas:
+                                "back desc"
+                                "drapeau memory"
+                                "shiFuMi meteo";
+    }
+}
