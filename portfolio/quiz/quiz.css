@@ -71,8 +71,8 @@ body {
     color: var(--text-and-border-color);
 }
 #container { /*Container: 100% of screen on width and height*/
-    height: 100vh;
-    width: 100vw;
+    height: 100dvh;
+    width: 100dvw;
 
     display: flex;
     flex-flow: column;
