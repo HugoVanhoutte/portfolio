@@ -1,14 +1,13 @@
 #container {
-    width: 90rem;
-    height: 60rem;
+    margin: 5rem auto auto;
 
     display: grid;
 
     grid-template-rows: repeat(2 , 50%);
-    grid-template-columns: repeat(3 , 33%);
+    grid-template-columns: repeat(4 , 25%);
 
-    grid-template-areas:    "back desc drapeau"
-                            "memory shiFuMi meteo";
+    grid-template-areas:    "back desc re7 re7"
+                            "memory shiFuMi meteo drapeau";
 
 }
 
@@ -47,6 +46,12 @@
     grid-area: back;
 
     background-color: #0d1117;
+}
+
+#re7{
+    grid-area: re7;
+
+    background-color: #35bc7a;
 }
 
 @media screen and (max-width: 768px) {

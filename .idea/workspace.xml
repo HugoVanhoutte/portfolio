@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44f1c122-07c5-4e3c-a92b-f3bc0384dc84" name="Changes" comment="public - deletion">
+    <list default="true" id="44f1c122-07c5-4e3c-a92b-f3bc0384dc84" name="Changes" comment="Changed resume">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +16,25 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;HugoVanhoutte&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/HugoVanhoutte/portfolio.git&quot;,
+    &quot;accountId&quot;: &quot;d61ab45f-6bbd-4f1d-81fc-f7c6ce010e7b&quot;
+  }
+}</component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -29,22 +45,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/thehu/PhpstormProjects/portfolio&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "dev2",
+    "last_opened_file_path": "C:/Users/thehu/PhpstormProjects/portfolio/docs",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\thehu\PhpstormProjects\portfolio\docs" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\thehu\PhpstormProjects\portfolio" />
       <recent name="C:\Users\thehu\PhpstormProjects\portfolioa" />
@@ -53,7 +72,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-php-predefined-ba97393d7c68-b4dcf6bb9de9-com.jetbrains.php.sharedIndexes-PS-233.13135.108" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PS-241.18034.69" />
+        <option value="bundled-php-predefined-ba97393d7c68-48a1a656d44e-com.jetbrains.php.sharedIndexes-PS-241.18034.69" />
       </set>
     </attachedChunks>
   </component>
@@ -67,6 +87,9 @@
       <updated>1714818032418</updated>
       <workItem from="1714818034634" duration="360000" />
       <workItem from="1714818411223" duration="2780000" />
+      <workItem from="1717594571683" duration="1218000" />
+      <workItem from="1717935240498" duration="12000" />
+      <workItem from="1728050362159" duration="567000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -84,7 +107,55 @@
       <option name="project" value="LOCAL" />
       <updated>1714819905960</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Quizz:&#10; - Changed container size units from vp to dvp">
+      <option name="closed" value="true" />
+      <created>1717580546999</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717580546999</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Quizz:&#10; - Changed container size units from vp to dvp on mobile media query">
+      <option name="closed" value="true" />
+      <created>1717581334921</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717581334921</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Quizz:&#10;- Added Margins for buttons and button Divs&#10;- Reduced size of answer buttons">
+      <option name="closed" value="true" />
+      <created>1717582365036</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717582365036</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Changed resume">
+      <option name="closed" value="true" />
+      <created>1728050450139</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728050450139</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Changed resume">
+      <option name="closed" value="true" />
+      <created>1728050653999</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1728050653999</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Changed resume">
+      <option name="closed" value="true" />
+      <created>1728050764450</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1728050764450</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,6 +164,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="public - deletion" />
-    <option name="LAST_COMMIT_MESSAGE" value="public - deletion" />
+    <MESSAGE value="Quizz:&#10; - Changed container size units from vp to dvp" />
+    <MESSAGE value="Quizz:&#10; - Changed container size units from vp to dvp on mobile media query" />
+    <MESSAGE value="Quizz:&#10;- Added Margins for buttons and button Divs&#10;- Reduced size of answer buttons" />
+    <MESSAGE value="Changed resume" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed resume" />
   </component>
 </project>
