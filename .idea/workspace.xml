@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44f1c122-07c5-4e3c-a92b-f3bc0384dc84" name="Changes" comment="Changed resume" />
+    <list default="true" id="44f1c122-07c5-4e3c-a92b-f3bc0384dc84" name="Changes" comment="Changed resume">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +49,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "dev",
+    "git-widget-placeholder": "dev2",
     "last_opened_file_path": "C:/Users/thehu/PhpstormProjects/portfolio/docs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -59,6 +61,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\thehu\PhpstormProjects\portfolio\docs" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\thehu\PhpstormProjects\portfolio" />
       <recent name="C:\Users\thehu\PhpstormProjects\portfolioa" />
@@ -84,7 +89,7 @@
       <workItem from="1714818411223" duration="2780000" />
       <workItem from="1717594571683" duration="1218000" />
       <workItem from="1717935240498" duration="12000" />
-      <workItem from="1728050362159" duration="305000" />
+      <workItem from="1728050362159" duration="567000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -142,7 +147,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728050653999</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Changed resume">
+      <option name="closed" value="true" />
+      <created>1728050764450</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1728050764450</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
