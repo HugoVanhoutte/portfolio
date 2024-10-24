@@ -12,8 +12,8 @@ const experiences: experience[] = [
     contractType: t('experiences.contractTypes.training'),
     place: 'Roubaix',
     company: 'ADAPECO',
-    description: 'experiences.Adapeco.description',
-    startDate: t('experiiences.Adapeco.startDate'),
+    description: t('experiences.Adapeco.description'),
+    startDate: t('experiences.Adapeco.startDate'),
     endDate: t('experiences.Adapeco.endDate'),
     color: '$orange',
   },
@@ -112,16 +112,10 @@ const experiences: experience[] = [
 @import '@/assets/variables.scss';
 #experience {
   margin-top: 3rem;
+  position: relative;
   h1 {
     text-align: center;
     text-transform: capitalize;
   }
-}
-#experience::after {
-  content: '';
-  display: block;
-  width: .5rem;
-  height: 100%;
-  background-color: $lighter;
 }
 </style>

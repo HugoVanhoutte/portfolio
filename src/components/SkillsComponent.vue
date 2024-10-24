@@ -14,7 +14,7 @@ const skills: skill[] = [
     subSkills: [
       { name: 'HTML5', stars: 10 },
       { name: 'CSS3', stars: 10 },
-      { name: 'JavaScript(ES6)', stars: 9 },
+      { name: 'JS(ES6)', stars: 9 },
       { name: 'SCSS', stars: 7 },
       { name: 'Vue.js', stars: 6 },
       { name: 'Bootstrap', stars: 8 },
@@ -44,7 +44,7 @@ const skills: skill[] = [
       { name: 'Figma', stars: 8 },
       { name: 'Jira', stars: 6 },
       { name: 'Postman', stars: 9 },
-      { name: 'Git& GitHub', stars: 7 },
+      { name: 'Git & GitHub', stars: 7 },
       { name: 'Docker', stars: 4 },
       { name: 'i18n', stars: 8 },
       { name: t('skills.languages.english'), stars: 9 },

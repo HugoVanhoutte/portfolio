@@ -12,6 +12,7 @@ $purple: #9B59B6;
 $orange: #E67E22;
 $grey: #95A5A6;
 $pink: #FFB8B8;
+$darker-pink: #a87878;
 
 :root {
   --dark: #{$dark};
@@ -26,6 +27,9 @@ $pink: #FFB8B8;
   --orange: #{$orange};
   --grey: #{$grey};
   --pink: #{$pink};
+  --darker-pink: #{$darker-pink};
+
+  scroll-behavior: smooth;
 }
 
 //Fonts

@@ -4,6 +4,7 @@ import HomeComponent from '@/components/HomeComponent.vue';
 import AboutComponent from '@/components/AboutComponent.vue';
 import SkillsComponent from '@/components/SkillsComponent.vue';
 import ExperienceComponent from '@/components/ExperienceComponent.vue';
+import ProjectsComponent from '@/components/ProjectsComponent.vue';
 </script>
 
 <template>
@@ -33,6 +34,7 @@ import ExperienceComponent from '@/components/ExperienceComponent.vue';
   <AboutComponent id="about"/>
   <SkillsComponent id="skills"/>
   <ExperienceComponent id="experience"/>
+  <ProjectsComponent id="projects"/>
 </template>
 
 <style scoped lang="scss">

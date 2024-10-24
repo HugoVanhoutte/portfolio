@@ -6,10 +6,7 @@ const age = 24;
   <section id="about">
     <main class="description">
       <aside class="info">
-        <div class="photo">
-<!--          TODO ADD PHOTO-->
-          <img src="https://placehold.co/400x600" :alt="$t('about.photo.alt')">
-        </div>
+        <div class="photo"/>
         <div class="details">
           <ul>
             <li><strong>{{ $t('about.name') }}: </strong>{{ $t('globals.fullName') }}</li>
@@ -39,7 +36,6 @@ const age = 24;
 <style scoped lang="scss">
 @import '@/assets/variables.scss';
 #about {
-  height: calc(100dvh - 3rem);
   padding: 3rem 0;
   font-family: $body-font;
   width: 100%;
@@ -50,8 +46,10 @@ const age = 24;
     width: 80%;
     display: flex;
     flex-direction: row;
+    height: 80%;
     .info {
       width: 33%;
+      height: 80%;
       .details {
         ul {
           li {
@@ -66,6 +64,13 @@ const age = 24;
       }
       .photo {
         width: 100%;
+        height: 600px;
+        background-image: url("@/assets/profile-picture.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 1rem;
+        transition: .3s ease-in;
       }
     }
     .text {

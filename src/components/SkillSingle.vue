@@ -36,13 +36,13 @@ Number(props.index) % 2 !== 0 ? direction = 'row-reverse' : direction = 'row'
 <style scoped lang="scss">
 @import '@/assets/variables.scss';
 .skill {
-  width: 75%;
+  width: 80%;
   margin: auto;
   font-family: $body-font;
   display: flex;
   flex-direction: v-bind('direction');
   .text {
-    width: 45%;
+    width: 70%;
     background-color: $light;
     border-radius: 1rem;
     padding: 2rem;
@@ -77,11 +77,15 @@ Number(props.index) % 2 !== 0 ? direction = 'row-reverse' : direction = 'row'
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        p {
+          overflow: hidden;
+          line-break: strict;
+        }
       }
     }
   }
   aside {
-    width: 45%;
+    width: 25%;
     color: v-bind('color');
     font-size: 10rem;
     font-weight: 900;
@@ -89,6 +93,9 @@ Number(props.index) % 2 !== 0 ? direction = 'row-reverse' : direction = 'row'
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    i {
+      transition: .3s
+    }
     i:hover {
       transform: scale(120%);
       transition: .3s

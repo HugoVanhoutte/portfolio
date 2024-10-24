@@ -63,6 +63,12 @@
     "places": {
       "remote": "en distanciel"
     },
+    "Adapeco": {
+      "jobTitle": "tp concépteur développeur d'applications",
+      "description": "TODO",
+      "startDate": "juillet 2024",
+      "endDate": "janvier 2025"
+    },
     "Bonduelle": {
       "jobTitle": "assistant commercial, gestionnaire administration des ventes",
       "description": "TODO",
@@ -78,14 +84,14 @@
     "UpTo": {
       "jobTitle": "tp développeur web et web mobile",
       "description": "TODO",
-      "startDate": "Septembre 2022",
-      "endDate": "Juin 2023"
+      "startDate": "septembre 2022",
+      "endDate": "juin 2023"
     },
     "Dublin": {
       "jobTitle": "séjour erasmus à Dublin",
       "description": "TODO",
-      "startDate": "Septembre 2019",
-      "endDate": "Janvier 2020"
+      "startDate": "septembre 2019",
+      "endDate": "janvier 2020"
     },
     "Altereos": {
       "jobTitle": "opérateur de saisie",
@@ -107,5 +113,8 @@
       "startDate": "septembre 2014",
       "endDate": "juillet 2017"
     }
+  },
+  "projects": {
+    "title": "réalisations"
   }
 }

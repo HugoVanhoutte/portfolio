@@ -89,7 +89,7 @@ button {
   font-size: 1.25rem;
   font-weight: 300;
   color: $light;
-  transition: 0.3s;
+  transition: .3s;
 }
 button.blue {
   background-color: $blue;
