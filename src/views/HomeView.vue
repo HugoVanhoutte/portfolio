@@ -1,18 +1,58 @@
+<script setup lang="ts">
+
+import HomeComponent from '@/components/HomeComponent.vue';
+import AboutComponent from '@/components/AboutComponent.vue';
+import SkillsComponent from '@/components/SkillsComponent.vue';
+import ExperienceComponent from '@/components/ExperienceComponent.vue';
+</script>
+
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+  <nav>
+    <ul>
+      <li>
+        <a href="#home">{{ $t('header.home') }}</a>
+      </li>
+      <li>
+        <a href="#about">{{ $t('header.about') }}</a>
+      </li>
+      <li>
+        <a href="#skills">{{ $t('header.skills') }}</a>
+      </li>
+      <li>
+        <a href="#experience">{{ $t('header.experience') }}</a>
+      </li>
+      <li>
+        <a href="#project">{{ $t('header.projects') }}</a>
+      </li>
+      <li>
+        <router-link :to="{ hash: '#contact' }">{{ $t('header.contact') }}</router-link>
+      </li>
+    </ul>
+  </nav>
+  <HomeComponent id="home"/>
+  <AboutComponent id="about"/>
+  <SkillsComponent id="skills"/>
+  <ExperienceComponent id="experience"/>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
-
-export default defineComponent({
-  name: 'HomeView',
-  components: {
-    HelloWorld,
-  },
-});
-</script>
+<style scoped lang="scss">
+@import '@/assets/variables.scss';
+nav {
+  width: 100%;
+  height: 2rem;
+  background-color: $dark-transparent;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+  ul {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: $body-font;
+    color: $pink;
+  }
+};
+</style>

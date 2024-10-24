@@ -1,0 +1,35 @@
+//Colors
+$dark: #000000;
+$dark-transparent: #00000066;
+$light: #FFFFFF;
+$lighter: #EBEBEB;
+
+$blue: #3FA8FD;
+$darker-blue: #0061b6;
+$green: #2FDC9C;
+$darker-green: #1c8d69;
+$purple: #9B59B6;
+$orange: #E67E22;
+$grey: #95A5A6;
+$pink: #FFB8B8;
+
+:root {
+  --dark: #{$dark};
+  --dark-transparent: #{$dark-transparent};
+  --light: #{$light};
+  --lighter: #{$lighter};
+  --blue: #{$blue};
+  --darker-blue: #{$darker-blue};
+  --green: #{$green};
+  --darker-green: #{$darker-green};
+  --purple: #{$purple};
+  --orange: #{$orange};
+  --grey: #{$grey};
+  --pink: #{$pink};
+}
+
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$body-font: Lexend, sans-serif;
+$title-font: Poppins, serif;
+

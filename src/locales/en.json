@@ -1,0 +1,35 @@
+{
+  "globals": {
+    "fullName": "Hugo Vanhoutte",
+    "currentCity": "Lille Metropolitan Area",
+    "hobbies": "Video games, hiking, personal projects, swimming"
+  },
+  "header": {
+    "home": "home",
+    "about": "about",
+    "skills": "skills",
+    "experience": "experience",
+    "projects": "projects",
+    "contact": "contact"
+  },
+  "home": {
+    "presentation": "Hello, My name is and i am",
+    "title": "FullStack-Web Developer",
+    "jobResearch": "I am currently looking for an internship in the Lille Metropolitan Area or in Valenciennes from the 25th of november to the 20th of december",
+    "frontEnd": "front-end",
+    "backEnd": "back-end",
+    "webDesign": "web-design",
+    "mobile": "mobile",
+    "english": "english"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "testestest",
+    "name": "Name",
+    "age": "Age",
+    "currentCity": "Current city",
+    "hobbies": "Hobbies",
+    "downloadResume": "download my resume",
+    "contactMe": "contact me"
+  }
+}

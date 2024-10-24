@@ -1,0 +1,111 @@
+{
+  "globals": {
+    "fullName": "Hugo Vanhoutte",
+    "currentCity": "Métropole Européenne de Lille",
+    "hobbies": "Jeux vidéos, randonnée, projets personnels, natation"
+  },
+  "header": {
+    "home": "accueil",
+    "about": "à propos",
+    "skills": "compétences",
+    "experience": "parcours",
+    "projects": "réalisations",
+    "contact": "contact"
+  },
+  "home": {
+    "presentation": "Bonjour, je m'appelle Hugo et je suis",
+    "title": "Développeur Web FullStack",
+    "jobResearch": "Je suis à la recherche d'un stage dans la Métropole Européenne de Lille ou à Valenciennes pour la période du 25 novembre au 20 décembre",
+    "frontEnd": "front-end",
+    "backEnd": "back-end",
+    "webDesign": "web-design",
+    "mobile": "mobile",
+    "english": "anglais"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "description": "Développeur web junior, je cherche un stage afin d'acquérir une première éxperience en entreprise. Ayant obtenu un titre professionnel Développeur Web et Web Mobile et étant en formation afin d'obtenir mon titre professionnel Concepteur Développeur d'Application (CDA), je souhaite mettre à l'épreuve les compétences déjà acquises, les renforcer et en acquérir de nouvelles.",
+    "name": "Nom",
+    "age": "Age",
+    "currentCity": "Ville actuelle",
+    "hobbies": "Hobbies",
+    "downloadResume": "télécharger mon cv",
+    "contactMe": "me contacter"
+  },
+  "skills": {
+    "languages": {
+      "english": "Anglais",
+      "spanish": "Espagnol",
+      "russian": "Russe"
+    },
+    "frontEnd": {
+      "name": "front-end",
+      "description": "création et intégration de sites web responsive, répondant aux normes W3C"
+    },
+    "backEnd": {
+      "name": "back-end",
+      "description": "développement de sites web, création de bases de données, POO, gestion des données (CRUD), sécurité, deployment"
+    },
+    "otherTools": {
+      "name": "autres outils et compétences",
+      "description": "Outils et compétences en relation indirecte avec le métier de développeur web"
+    }
+  },
+  "experiences": {
+    "to":  "à",
+    "contractTypes": {
+      "apprenticeship": "en alternance",
+      "internship": "en stage",
+      "fixedTerm": "en CDD",
+      "permanent": "en CDI",
+      "training": "formation professionnelle"
+    },
+    "places": {
+      "remote": "en distanciel"
+    },
+    "Bonduelle": {
+      "jobTitle": "assistant commercial, gestionnaire administration des ventes",
+      "description": "TODO",
+      "startDate": "juillet 2023",
+      "endDate": "décembre 2023"
+    },
+    "Upytek": {
+      "jobTitle": "développeur web full-stack",
+      "description": "TODO",
+      "startDate": "mars 2023",
+      "endDate": "avril 2023"
+    },
+    "UpTo": {
+      "jobTitle": "tp développeur web et web mobile",
+      "description": "TODO",
+      "startDate": "Septembre 2022",
+      "endDate": "Juin 2023"
+    },
+    "Dublin": {
+      "jobTitle": "séjour erasmus à Dublin",
+      "description": "TODO",
+      "startDate": "Septembre 2019",
+      "endDate": "Janvier 2020"
+    },
+    "Altereos": {
+      "jobTitle": "opérateur de saisie",
+      "description": "TODO",
+      "startDate": "juillet 2019",
+      "endDate": "août 2020"
+    },
+    "LLCE": {
+      "jobTitle": "licence langues étrangères et régionales: anglais",
+      "contractType": "DEUG d'anglais",
+      "description": "TODO",
+      "startDate": "septembre 2017",
+      "endDate": "juin 2021"
+    },
+    "bac": {
+      "jobTitle": "baccalauréat",
+      "contractType": "filière scientifique",
+      "description": "TODO",
+      "startDate": "septembre 2014",
+      "endDate": "juillet 2017"
+    }
+  }
+}

@@ -1,6 +1,23 @@
 import { createApp } from 'vue';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { createI18n } from 'vue-i18n';
 import App from './App.vue';
 import router from './router';
 import store from './store';
 
-createApp(App).use(store).use(router).mount('#app');
+import en from './locales/en.json';
+import fr from './locales/fr.json';
+
+const i18n = createI18n({
+  legacy: false,
+  locale: navigator.language,
+  // locale: 'en',
+  fallbackLocale: 'en',
+  messages: { en, fr },
+});
+
+createApp(App)
+  .use(store)
+  .use(router)
+  .use(i18n)
+  .mount('#app');
