@@ -1,41 +1,44 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
 import ProjectSingle from '@/components/ProjectSingle.vue';
 import { project } from '../../config';
 
+const { t } = useI18n();
+
 const projects: project[] = [
   {
-    name: 'RE7',
+    name: t('projects.RE7.name'),
     stack: ['Bootstrap', 'PHP', 'MySQL'],
-    description: 'TODO',
-    image: '../src/assets/RE7.png',
+    description: t('projects.RE7.description'),
+    image: 'RE7.png',
     link: '#',
   },
   {
-    name: 'memory game',
+    name: t('projects.memory.name'),
     stack: ['jQuery'],
-    description: 'TODO',
-    image: '@/assets/memory.png',
+    description: t('projects.memory.description'),
+    image: 'memory.png',
     link: '#',
   },
   {
-    name: 'application météo',
+    name: t('projects.weatherApp.name'),
     stack: ['jQuery', 'REST API'],
-    description: 'TODO',
-    image: '@/assets/weather.png',
+    description: t('projects.weatherApp.name'),
+    image: 'weatherApp.png',
     link: '#',
   },
   {
-    name: 'quiz drapeaux',
+    name: t('projects.flagQuiz.name'),
     stack: ['jQuery', 'REST API'],
-    description: 'TODO',
-    image: '@/assets/flags.png',
+    description: t('projects.flagQuiz.description'),
+    image: 'flagQuiz.png',
     link: '#',
   },
   {
-    name: 'Shi-Fu-mi',
+    name: t('projects.shiFuMi.name'),
     stack: ['JavaScript'],
-    description: 'TODO',
-    image: '@/assets/shi-fu-mi.png',
+    description: t('projects.shiFuMi.description'),
+    image: 'shiFuMi.png',
     link: '#',
   },
 ];
@@ -53,7 +56,11 @@ const projects: project[] = [
 <style scoped lang="scss">
 @import '@/assets/variables.scss';
 #projects {
+  padding-top: 3rem;
   background-color: $lighter;
+  display:  flex;
+  flex-direction: column;
+  align-items: center;
   h1 {
     text-align: center;
     text-transform: capitalize;
@@ -62,6 +69,8 @@ const projects: project[] = [
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
   }
 }
 </style>

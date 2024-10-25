@@ -111,7 +111,7 @@ const experiences: experience[] = [
 <style scoped lang="scss">
 @import '@/assets/variables.scss';
 #experience {
-  margin-top: 3rem;
+  padding-top: 3rem;
   position: relative;
   h1 {
     text-align: center;

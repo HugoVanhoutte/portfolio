@@ -23,7 +23,7 @@ import ProjectsComponent from '@/components/ProjectsComponent.vue';
         <a href="#experience">{{ $t('header.experience') }}</a>
       </li>
       <li>
-        <a href="#project">{{ $t('header.projects') }}</a>
+        <a href="#projects">{{ $t('header.projects') }}</a>
       </li>
       <li>
         <router-link :to="{ hash: '#contact' }">{{ $t('header.contact') }}</router-link>
