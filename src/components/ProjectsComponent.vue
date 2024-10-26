@@ -14,6 +14,13 @@ const projects: project[] = [
     link: '#',
   },
   {
+    name: 'Graduate',
+    stack: ['Vue.js', 'Node.js', 'Express', 'MySQL'],
+    description: t('projects.graduate.description'),
+    image: 'graduate.png',
+    link: '#',
+  },
+  {
     name: t('projects.memory.name'),
     stack: ['jQuery'],
     description: t('projects.memory.description'),
@@ -23,7 +30,7 @@ const projects: project[] = [
   {
     name: t('projects.weatherApp.name'),
     stack: ['jQuery', 'REST API'],
-    description: t('projects.weatherApp.name'),
+    description: t('projects.weatherApp.description'),
     image: 'weatherApp.png',
     link: '#',
   },
@@ -56,7 +63,7 @@ const projects: project[] = [
 <style scoped lang="scss">
 @import '@/assets/variables.scss';
 #projects {
-  padding-top: 3rem;
+  padding: 3rem 0;
   background-color: $lighter;
   display:  flex;
   flex-direction: column;

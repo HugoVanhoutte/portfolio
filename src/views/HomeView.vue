@@ -7,6 +7,7 @@ import ExperienceComponent from '@/components/ExperienceComponent.vue';
 import ProjectsComponent from '@/components/ProjectsComponent.vue';
 import ContactComponent from '@/components/ContactComponent.vue';
 import FooterComponent from '@/components/FooterComponent.vue';
+// TODO: change directory images (bg-home & profile-picture) to public
 </script>
 
 <template>
@@ -52,8 +53,9 @@ nav {
   align-items: center;
   position: fixed;
   z-index: 9999;
+  text-transform: capitalize;
   ul {
-    width: 65%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;

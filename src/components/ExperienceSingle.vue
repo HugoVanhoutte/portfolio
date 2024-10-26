@@ -40,8 +40,10 @@ const color = `var(--${props.experience.color})`.replace('$', '');
       {{ props.experience.place }},
       {{ props.experience.contractType }}
     </h2>
-    <p>{{ props.experience.description }}</p>
-  </div>
+    <div class="text">
+      <p>{{ props.experience.description }}</p>
+    </div>
+    </div>
 </article>
 </template>
 
@@ -91,24 +93,32 @@ const color = `var(--${props.experience.color})`.replace('$', '');
       .title {
         display: flex;
         flex-direction: row;
+        align-items: center;
         i {
           color: v-bind('color');
           margin-right: 1rem;
+          font-size: 2rem;
         }
         h1 {
           color: v-bind('color');
           text-transform: uppercase;
-          font-size: 1rem;
+          font-size: 1.5rem;
           font-family: $title-font;
+        }
+        p {
+          font-weight: 300;
         }
       }
       h2 {
         font-family: $body-font;
         font-weight: 350;
+        font-size: 1.25rem;
+        padding: .75rem 0;
       }
       p {
         font-family: $body-font;
         font-weight: 300;
+        padding: .75rem 0;
       }
     }
   }

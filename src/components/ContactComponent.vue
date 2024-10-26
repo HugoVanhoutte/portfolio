@@ -56,6 +56,7 @@ const contactList: contactInfo[] = [
     }
     p {
       font-family: $body-font;
+      font-weight: 300;
     }
     .contact-list {
       display: flex;
