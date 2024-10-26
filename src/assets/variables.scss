@@ -1,33 +1,58 @@
 //Colors
 $dark: #000000;
+$darker: #262626;
 $dark-transparent: #00000066;
+
 $light: #FFFFFF;
 $lighter: #EBEBEB;
 
 $blue: #3FA8FD;
 $darker-blue: #0061b6;
+$brighter-blue: #a2d3fc;
+
 $green: #2FDC9C;
 $darker-green: #1c8d69;
+$brighter-green: #9effda;
+
 $purple: #9B59B6;
+$darker-purple: #563265;
+$brighter-purple: #a481b2;
+
 $orange: #E67E22;
+
 $grey: #95A5A6;
+
 $pink: #FFB8B8;
 $darker-pink: #a87878;
+$brighter-pink: #fcdcdc;
 
 :root {
   --dark: #{$dark};
+  --darker: #{$darker};
   --dark-transparent: #{$dark-transparent};
+
   --light: #{$light};
   --lighter: #{$lighter};
+
   --blue: #{$blue};
   --darker-blue: #{$darker-blue};
+  --brighter-blue: #{$brighter-blue};
+
   --green: #{$green};
   --darker-green: #{$darker-green};
+  --brighter-green: #{$brighter-green};
+
   --purple: #{$purple};
+  --darker-purple: #{$darker-purple};
+  --brighter-purple: #{$brighter-purple};
+
   --orange: #{$orange};
+
   --grey: #{$grey};
+
   --pink: #{$pink};
   --darker-pink: #{$darker-pink};
+  --brighter-pink: #{$brighter-pink};
 
   scroll-behavior: smooth;
 }

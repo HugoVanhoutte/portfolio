@@ -30,3 +30,10 @@ export type project = {
   image: string,
   link: string,
 }
+
+export type contactInfo = {
+  icon: string,
+  text: string,
+  color: string,
+  link: string,
+}

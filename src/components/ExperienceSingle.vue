@@ -87,6 +87,7 @@ const color = `var(--${props.experience.color})`.replace('$', '');
       padding: 1rem;
       margin: 2rem 0;
       border-radius: 1rem;
+      box-shadow: 2px 2px 4px $dark-transparent;
       .title {
         display: flex;
         flex-direction: row;

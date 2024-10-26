@@ -115,6 +115,31 @@
     }
   },
   "projects": {
-    "title": "réalisations"
+    "title": "réalisations",
+    "RE7": {
+      "name": "RE7",
+      "description": "TODO"
+    },
+    "memory": {
+      "name": "Jeu du mémory",
+      "description": "TODO"
+    },
+    "weatherApp": {
+      "name": "Application Météo",
+      "description": "TODO"
+    },
+    "flagQuiz": {
+      "name": "Quiz sur les drapeaux",
+      "description": "TODO"
+    },
+    "shiFuMi": {
+      "name": "Shi - Fu - Mi",
+      "description": "TODO"
+    }
+  },
+  "contact": {
+    "contactMe": "N'hésitez pas à me contacter !",
+    "text": "Je suis actuellement à la recherche d'un stage pour la période du 25 novembre au 20 décembre.",
+    "jobSearchList": ""
   }
 }

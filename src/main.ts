@@ -1,5 +1,4 @@
 import { createApp } from 'vue';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { createI18n } from 'vue-i18n';
 import App from './App.vue';
 import router from './router';

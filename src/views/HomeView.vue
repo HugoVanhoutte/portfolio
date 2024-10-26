@@ -5,6 +5,8 @@ import AboutComponent from '@/components/AboutComponent.vue';
 import SkillsComponent from '@/components/SkillsComponent.vue';
 import ExperienceComponent from '@/components/ExperienceComponent.vue';
 import ProjectsComponent from '@/components/ProjectsComponent.vue';
+import ContactComponent from '@/components/ContactComponent.vue';
+import FooterComponent from '@/components/FooterComponent.vue';
 </script>
 
 <template>
@@ -26,7 +28,7 @@ import ProjectsComponent from '@/components/ProjectsComponent.vue';
         <a href="#projects">{{ $t('header.projects') }}</a>
       </li>
       <li>
-        <router-link :to="{ hash: '#contact' }">{{ $t('header.contact') }}</router-link>
+        <a href="#contact">{{ $t('header.contact') }}</a>
       </li>
     </ul>
   </nav>
@@ -35,6 +37,8 @@ import ProjectsComponent from '@/components/ProjectsComponent.vue';
   <SkillsComponent id="skills"/>
   <ExperienceComponent id="experience"/>
   <ProjectsComponent id="projects"/>
+  <ContactComponent id="contact"/>
+  <FooterComponent/>
 </template>
 
 <style scoped lang="scss">

@@ -1,5 +1,12 @@
 <script setup lang="ts">
-const age = 24;
+const birthDate = new Date('1999-03-01');
+const today = new Date();
+let age = today.getFullYear() - birthDate.getFullYear();
+const monthDifference = today.getMonth() - birthDate.getMonth();
+if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
+  age -= 1;
+}
+
 </script>
 
 <template>
@@ -21,7 +28,6 @@ const age = 24;
           {{ $t('about.title') }}
         </h1>
         <p>
-<!--          TODO DESCRIPTION-->
           {{ $t('about.description') }}
         </p>
       </div>
@@ -48,8 +54,8 @@ const age = 24;
     flex-direction: row;
     height: 80%;
     .info {
-      width: 33%;
-      height: 80%;
+      width: 25%;
+      height: 60%;
       .details {
         ul {
           li {
@@ -64,7 +70,7 @@ const age = 24;
       }
       .photo {
         width: 100%;
-        height: 600px;
+        height: 550px;
         background-image: url("@/assets/profile-picture.png");
         background-position: center;
         background-repeat: no-repeat;

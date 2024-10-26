@@ -55,7 +55,10 @@ const hideDescription = () => {
     margin: 2rem 0;
     overflow: hidden;
     background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 4px $dark-transparent;
     .description {
+      border-top: 1px $dark-transparent solid;
       height: 100%;
       width: 100%;
       display: flex;
@@ -113,6 +116,7 @@ const hideDescription = () => {
     }
     .description:hover {
       border-radius: 1rem;
+      border-top: none;
     }
   }
 </style>
