@@ -28,25 +28,25 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build --if-present
-
-#  lint:
-#    name: lint
-#    runs-on: ubuntu-latest
-#    permissions:
-#      contents: read
-#      security-events: write
-#      actions: read # only required for a private repository by github/codeql-action/upload-sarif to get the Action run status
-#    steps:
-#      # Checkout action must run prior to eslint check
-#    - name: Checkout
-#      uses: actions/checkout@v1
-#    - name: Lint
-#      uses: Krizzu/eslint-check-action@v1.1.0
-#      with:
-#        ghToken: ${{ secrets.GITHUB_TOKEN }}
-#        eslintFiles: "lib, scripts"
-#        eslintConfig: "myConfigs/eslint.config.js"
-#        eslintExt: "ts, tsx"
+    
+  # lint:
+  #   name: lint
+  #   runs-on: ubuntu-latest
+  #   permissions:
+  #     contents: read
+  #     security-events: write
+  #     actions: read # only required for a private repository by github/codeql-action/upload-sarif to get the Action run status
+  #   steps:
+  #     # Checkout action must run prior to eslint check
+  #   - name: Checkout 
+  #     uses: actions/checkout@v1
+  #   - name: Lint
+  #     uses: Krizzu/eslint-check-action@v1.1.0
+  #     with:
+  #       ghToken: ${{ secrets.GITHUB_TOKEN }}
+  #       eslintFiles: "lib, scripts"
+  #       eslintConfig: "myConfigs/eslint.config.js"
+  #       eslintExt: "ts, tsx"
   commit-me:
     name: Conventional Commits Compliance
     runs-on: ubuntu-latest
