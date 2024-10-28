@@ -15,6 +15,7 @@ if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate
       <aside class="info">
         <div class="photo"/>
         <div class="details">
+          <p>TEST</p>
           <ul>
             <li><strong>{{ $t('about.name') }}: </strong>{{ $t('globals.fullName') }}</li>
             <li><strong>{{ $t('about.age') }}: </strong>{{ age }}</li>
