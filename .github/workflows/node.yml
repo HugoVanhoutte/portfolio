@@ -47,14 +47,9 @@ jobs:
   #       eslintFiles: "lib, scripts"
   #       eslintConfig: "myConfigs/eslint.config.js"
   #       eslintExt: "ts, tsx"
-  commit-me:
-    name: Conventional Commits Compliance
+  check-for-cc:
     runs-on: ubuntu-latest
-    env:
-      # Enable colored output in GitHub Actions
-      FORCE_COLOR: 3
     steps:
-      - uses: dev-build-deploy/commit-me@v0
-        with:
-          token: ${{ github.token }}  # Required to retrieve the commits associated with your Pull Request
-          include-commits: true  # OPTIONAL; forces the inclusion of commits associated with your Pull Request
+      - name: check-for-cc
+        id: check-for-cc
+        uses: agenthunt/conventional-commit-checker-action@v1.0.0
