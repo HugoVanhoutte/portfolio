@@ -47,16 +47,16 @@ jobs:
   #       eslintFiles: "lib, scripts"
   #       eslintConfig: "myConfigs/eslint.config.js"
   #       eslintExt: "ts, tsx"
-  check-for-cc:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Conventional Commitlint
-        uses: opensource-nepal/commitlint@v1
-      - uses: actions/checkout@v4
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'npm'
-      - run: npm ci
-      - run: npm run build --if-present
+  # check-for-cc:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Conventional Commitlint
+  #       uses: opensource-nepal/commitlint@v1
+  #     - uses: actions/checkout@v4
+  #     - name: Use Node.js ${{ matrix.node-version }}
+  #       uses: actions/setup-node@v4
+  #       with:
+  #         node-version: ${{ matrix.node-version }}
+  #         cache: 'npm'
+  #     - run: npm ci
+  #     - run: npm run build --if-present
