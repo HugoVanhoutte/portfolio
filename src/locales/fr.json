@@ -132,6 +132,14 @@
         "possibilité pour un admin/formateur de créer des groupes d'apprenants (classes)"
       ]
     },
+    "ticTacToe": {
+      "name": "Jeu du morpion",
+      "description": "Projet réalisé lors de ma formation CDA à l'aide de Vue.js, en utilisant ESLint, TypeScript, Jest et le respect des normes conventionnel de commits afin d'avoir un code propre et maintenable",
+      "todos": [
+        "ajouter un délai pour la réponse du 'bot'",
+        "ajouter la possibilité de jouer en ligne (WebSocket)"
+      ]
+    },
     "memory": {
       "name": "Jeu du mémory",
       "description": "Jeu de mémory réalisé a l'aide de jQuery dans lequel l'utilisateur doit faire correspondre des couleurs.",
