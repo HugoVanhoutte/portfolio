@@ -81,11 +81,14 @@
       justify-content: space-around;
       cursor: pointer;
       transition: color .4s ease;
+      margin-top: 2rem;
       .icon {
-        font-size: 3rem;
+        font-size: 4rem;
       }
       p {
         font-family: $body-font;
+        font-size: 1.5rem;
+        padding: 2rem;
       }
     }
   }

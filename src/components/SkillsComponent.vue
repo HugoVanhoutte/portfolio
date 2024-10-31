@@ -28,9 +28,9 @@ const skills: skill[] = [
     icon: 'fa-solid fa-server',
     color: '$blue',
     subSkills: [
-      { name: 'PHP 7 & 8', stars: 9 },
+      { name: 'PHP 7 & 8', stars: 7 },
       { name: 'Symfony', stars: 7 },
-      { name: 'MySQL', stars: 8 },
+      { name: 'MySQL', stars: 9 },
       { name: 'Node.js', stars: 7 },
       { name: 'Express', stars: 7 },
     ],
