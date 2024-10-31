@@ -13,7 +13,9 @@ if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate
   <section id="about">
     <main class="description">
       <aside class="info">
-        <div class="photo"/>
+        <div class="photo">
+          <img src="../assets/profile-picture.png" alt="Photo">
+        </div>
         <div class="details">
           <ul>
             <li><strong>{{ $t('about.name') }}: </strong>{{ $t('globals.fullName') }}</li>
@@ -70,13 +72,19 @@ if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate
       }
       .photo {
         width: 100%;
-        height: 550px;
-        background-image: url("@/assets/profile-picture.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 1rem;
-        transition: .3s ease-in;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background-image: url("@/assets/profile-picture.png");
+        // background-position: center;
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        img {
+          height: auto;
+          width: 100%;
+          border-radius: 1rem;
+        }
       }
     }
     .text {
@@ -88,7 +96,7 @@ if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate
         font-weight: 250;
       }
     }
-  };
+  }
   .buttons {
     width: 80%;
     text-transform: uppercase;
@@ -98,6 +106,61 @@ if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate
     flex-direction: row;
     justify-content: space-evenly;
     margin: 3rem;
+  }
+}
+@media screen and (max-width: 769px) {
+  #about {
+    .description {
+      flex-direction: column;
+      width: 95%;
+      .info {
+        width: 100%;
+        height: 10rem;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 2rem;
+        .photo {
+          width: 50%;
+          height: 100%;
+        img {
+          width: auto;
+          height: 100%;
+        }
+        }
+      }
+      .text {
+        width: 95%;
+        margin: 0;
+      }
+    }
+    .buttons {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      button {
+        width: 95%;
+        margin: 1rem 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 481px) {
+  #about {
+    .description {
+      .info {
+        flex-direction: column;
+        height: fit-content;
+        .photo {
+          width: 100%;
+          justify-content: center;
+          align-content: center;
+          img {
+            width: 95%;
+            height: auto;
+          }
+        }
+      }
+    }
   }
 }
 </style>

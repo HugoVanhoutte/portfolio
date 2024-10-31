@@ -90,4 +90,22 @@
     }
   }
 }
+
+@media screen and (max-width: 769px) {
+  #home {
+    main {
+      width: 95%;
+      h1, h2 {
+        text-align: center;
+      }
+      p {
+        text-align: justify;
+      }
+    }
+    nav {
+      width: 95%;
+      flex-wrap: wrap;
+    }
+  }
+}
 </style>
