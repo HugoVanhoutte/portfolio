@@ -66,4 +66,12 @@ const contactList: contactInfo[] = [
       margin-top: 2rem;
     }
   }
+
+@media screen and (max-width: 769px) {
+  #contact {
+    p {
+      width: 95%;
+    }
+  }
+}
 </style>

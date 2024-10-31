@@ -34,7 +34,10 @@ const hideDescription = () => {
         <div class="text">
           <p>{{ props.project.description }}</p>
         </div>
-        <div class="button">
+        <div class="buttons">
+          <button>
+            Github >
+          </button>
           <button>
             voir le projet >
           </button>
@@ -74,6 +77,7 @@ const hideDescription = () => {
         justify-content: center;
         align-items: center;
         h1 {
+          font-size: 1.5rem;
           text-align: center;
         }
       }
@@ -86,28 +90,35 @@ const hideDescription = () => {
           border-radius: .5rem;
           color: $light;
           padding: 0.25rem;
+          margin: 1rem 0;
         }
       }
       .text {
-        flex-grow: 1;
+        height: 45%;
         overflow-y: auto;
         text-align: justify;
-        margin: 2rem 1rem;
         padding: 1rem;
         font-weight: 250;
         line-height: 1.5rem;
       }
-      .button {
+      .buttons {
         height: 20%;
+        width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
+        align-items: center;
         button {
           background-color: $pink;
           box-shadow: 0 3px 2px 1px $darker-pink;
           font-size: 1rem;
           padding: 0.25rem;
-          width: 80%;
+          width: 45%;
+          height: 90%;
           margin-bottom: 1rem;
+        }
+        button:nth-child(1) {
+          background-color: $blue;
+          box-shadow: 0 3px 2px 1px $darker-blue;
         }
         button:hover {
           box-shadow: none;
@@ -119,4 +130,25 @@ const hideDescription = () => {
       border-top: none;
     }
   }
+@media screen and (max-width: 769px) {
+  #project {
+    width: 95%;
+    height: 400px;
+    .description {
+      .stack {
+        flex-wrap: wrap;
+      }
+      .buttons {
+        flex-direction: column;
+        align-items: center;
+        height: 30%;
+        margin-bottom: .5rem;
+        button {
+          margin: .25rem;
+          width: 95%;
+        }
+      }
+    }
+  }
+}
 </style>

@@ -87,4 +87,11 @@ const projects: project[] = [
     width: 80%;
   }
 }
+@media screen and (max-width: 769px) {
+  #projects {
+    .projects-list {
+      width: 100%;
+    }
+  }
+}
 </style>

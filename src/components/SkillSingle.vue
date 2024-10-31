@@ -20,9 +20,9 @@ Number(props.index) % 2 !== 0 ? direction = 'row-reverse' : direction = 'row'
         <div v-for="subSkill in props.skill.subSkills" :key="subSkill.name" class="sub-skill">
           <h2>{{ subSkill.name }}</h2>
           <p>
-            <i class="fa-solid fa-star" v-for="star in Math.floor(Number(subSkill.stars) / 2)"></i>
-            <i class="fa-solid fa-star-half-stroke" v-if="Number(subSkill.stars) % 2 !== 0"></i>
-            <i class="fa-regular fa-star" v-for="emptyStar in Math.floor((10 - Number(subSkill.stars)) / 2)"></i>
+            <i class="fa-solid fa-star" v-for="star in Math.floor(Number(subSkill.stars) / 2)"/>
+            <i class="fa-solid fa-star-half-stroke" v-if="Number(subSkill.stars) % 2 !== 0"/>
+            <i class="fa-regular fa-star" v-for="emptyStar in Math.floor((10 - Number(subSkill.stars)) / 2)"/>
           </p>
         </div>
       </div>
@@ -99,6 +99,34 @@ Number(props.index) % 2 !== 0 ? direction = 'row-reverse' : direction = 'row'
     i:hover {
       transform: scale(120%);
       transition: .3s
+    }
+  }
+}
+@media screen and (max-width: 769px) {
+  .skill {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    aside {
+      display: none;
+    }
+    .text {
+      width: 85%;
+      margin: 1rem 0;
+    }
+  }
+}
+@media screen and (max-width: 481px) {
+  .skill {
+    width: 95%;
+    .text {
+      .sub-skills {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        .sub-skill {
+          width: 100%;
+        }
+      }
     }
   }
 }
