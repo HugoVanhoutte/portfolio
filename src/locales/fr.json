@@ -135,6 +135,7 @@
     "ticTacToe": {
       "name": "Jeu du morpion",
       "description": "Projet réalisé lors de ma formation CDA à l'aide de Vue.js, en utilisant ESLint, TypeScript, Jest et le respect des normes conventionnel de commits afin d'avoir un code propre et maintenable",
+
       "todo": [
         "ajouter un délai pour la réponse du 'bot'",
         "ajouter la possibilité de jouer en ligne (WebSocket)"

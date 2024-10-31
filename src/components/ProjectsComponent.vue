@@ -41,6 +41,13 @@ const projects: project[] = [
     ],
   },
   {
+    name: t('projects.ticTacToe.name'),
+    stack: ['Vue.js', 'TypeScript'],
+    description: t('projects.ticTacToe.description'),
+    image: 'tic-tac-toe.png',
+    link: '#',
+  },
+  {
     name: t('projects.memory.name'),
     stack: ['jQuery'],
     description: t('projects.memory.description'),
