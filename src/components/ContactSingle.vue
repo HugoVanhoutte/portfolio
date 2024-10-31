@@ -47,4 +47,10 @@ const darkerColor = color.replace('--', '--darker-');
 #contact-info:hover {
   transform: scale(110%);
 }
+
+@media screen and (max-width: 769px) {
+  #contact-info {
+    width: 80%
+  }
+}
 </style>

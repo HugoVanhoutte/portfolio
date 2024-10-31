@@ -7,23 +7,23 @@ import ExperienceComponent from '@/components/ExperienceComponent.vue';
 import ProjectsComponent from '@/components/ProjectsComponent.vue';
 import ContactComponent from '@/components/ContactComponent.vue';
 import FooterComponent from '@/components/FooterComponent.vue';
+import { ref } from 'vue';
 // TODO: change directory images (bg-home & profile-picture) to public
+const isMenuDisplayed = ref<boolean>(false);
 
 const toggleMenu = () => {
-  const navBar: HTMLElement = document.querySelector('nav') as HTMLElement;
-  const button: HTMLElement = document.querySelector('i') as HTMLElement;
-  const header: HTMLElement = document.querySelector('header') as HTMLElement;
-  navBar.classList.toggle('show');
-  button.classList.toggle('fa-bars');
-  button.classList.toggle('fa-xmark');
-  header.classList.toggle('show');
+  isMenuDisplayed.value = !isMenuDisplayed.value;
 };
 </script>
 
 <template>
-  <header>
-    <i class="fa-solid fa-bars menu" @click="toggleMenu()" @keydown.space="toggleMenu"/>
-    <nav>
+  <header :class="isMenuDisplayed ? 'show' : ''">
+    <i
+      :class="isMenuDisplayed ? 'fa-solid fa-xmark menu' : 'fa-solid fa-bars menu'"
+      @click="toggleMenu()"
+      @keydown.space="toggleMenu()"
+    />
+    <nav :class="isMenuDisplayed ? 'show' : ''">
       <ul>
         <li>
           <a href="#home">{{ $t('header.home') }}</a>
@@ -101,12 +101,13 @@ header {
     flex-direction: column;
     align-items: flex-end;
     nav {
-      display: none;
+      position: absolute;
+      top: -800%;
+      transition: .2s;
       ul {
         height: 100%;
         flex-direction: column;
         width: 100%;
-        justify-content: center;
         align-items: center;
         li {
           margin: 1rem;
@@ -114,7 +115,7 @@ header {
       }
     }
     nav.show {
-      display: flex;
+      top: 0;
     }
     i.menu {
       display: flex;

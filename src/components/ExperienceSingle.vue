@@ -122,4 +122,26 @@ const color = `var(--${props.experience.color})`.replace('$', '');
       }
     }
   }
+@media screen and (max-width: 769px) {
+  .experience {
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    .time-bar {
+      display: none;
+    }
+    .description {
+      width: 95%;
+      margin-top: 1rem;
+    }
+    .dates {
+      justify-content: center;
+      flex-direction: row;
+      width: 100%;
+      p {
+        margin: 0 .25rem;
+      }
+    }
+  }
+}
 </style>
