@@ -12,6 +12,10 @@ const projects: project[] = [
     description: t('projects.RE7.description'),
     image: 'RE7.png',
     link: '#',
+    todo: [
+      t('projects.RE7.todo[0]'),
+      t('projects.RE7.todo[1]'),
+    ],
   },
   {
     name: 'Graduate',
@@ -19,6 +23,11 @@ const projects: project[] = [
     description: t('projects.graduate.description'),
     image: 'graduate.png',
     link: '#',
+    todo: [
+      t('projects.graduate.todo[0]'),
+      t('projects.graduate.todo[1]'),
+      t('projects.graduate.todo[2]'),
+    ],
   },
   {
     name: t('projects.ticTacToe.name'),
@@ -26,6 +35,10 @@ const projects: project[] = [
     description: t('projects.ticTacToe.description'),
     image: 'tic-tac-toe.png',
     link: '#',
+    todo: [
+      t('projects.ticTacToe.todo[0]'),
+      t('projects.ticTacToe.todo[1]'),
+    ],
   },
   {
     name: t('projects.memory.name'),
@@ -33,6 +46,10 @@ const projects: project[] = [
     description: t('projects.memory.description'),
     image: 'memory.png',
     link: '#',
+    todo: [
+      t('projects.memory.todo[0]'),
+      t('projects.memory.todo[1]'),
+    ],
   },
   {
     name: t('projects.weatherApp.name'),
@@ -40,6 +57,10 @@ const projects: project[] = [
     description: t('projects.weatherApp.description'),
     image: 'weatherApp.png',
     link: '#',
+    todo: [
+      t('projects.weatherApp.todo[0]'),
+      t('projects.weatherApp.todo[1]'),
+    ],
   },
   {
     name: t('projects.flagQuiz.name'),
@@ -47,6 +68,10 @@ const projects: project[] = [
     description: t('projects.flagQuiz.description'),
     image: 'flagQuiz.png',
     link: '#',
+    todo: [
+      t('projects.flagQuiz.todo[0]'),
+      t('projects.flagQuiz.todo[1]'),
+    ],
   },
   {
     name: t('projects.shiFuMi.name'),
@@ -54,6 +79,9 @@ const projects: project[] = [
     description: t('projects.shiFuMi.description'),
     image: 'shiFuMi.png',
     link: '#',
+    todo: [
+      t('projects.shiFuMi.todo[0]'),
+    ],
   },
 ];
 </script>

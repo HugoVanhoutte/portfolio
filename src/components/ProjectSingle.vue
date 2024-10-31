@@ -33,6 +33,10 @@ const hideDescription = () => {
           </div>
         <div class="text">
           <p>{{ props.project.description }}</p>
+          <h3>Axes d'améliorations: </h3>
+          <ul>
+            <li v-for="todo in props.project.todo" :key="todo">> {{ todo }}</li>
+          </ul>
         </div>
         <div class="buttons">
           <button>
@@ -100,6 +104,11 @@ const hideDescription = () => {
         padding: 1rem;
         font-weight: 250;
         line-height: 1.5rem;
+        h3 {
+          margin-top: .5rem;
+          font-size: 1.25rem;
+          font-weight: 350;
+        }
       }
       .buttons {
         height: 20%;

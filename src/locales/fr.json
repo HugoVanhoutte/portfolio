@@ -119,14 +119,14 @@
     "RE7": {
       "name": "RE7",
       "description": "Projet de site de gestion de contenu dans lequel l'utilisateur peut créer un compte, se connecter, créer des recettes, les modifier, les supprimer. possibilité également de commenter les recettes et de créer des menus regroupant plusieurs recettes. Projet présenté au jury pour l'obtention du TP DWWM.",
-      "todos": [
+      "todo": [
         "réparer le système d'enregistrement (mails)",
         "ajouter la prise en charge et l'affichage de photos pour les recettes et les avatars"
       ]
     },
     "graduate": {
       "description": "Projet de site de quiz dans lequel un administrateur peut créer et modifier des quiz. N'importe quel utilisateur peut alors répondre aux questions et consulter ses résultats.",
-      "todos": [
+      "todo": [
         "étoffer les statistiques des résultats",
         "ajout d'images dans les quiz",
         "possibilité pour un admin/formateur de créer des groupes d'apprenants (classes)"
@@ -135,7 +135,7 @@
     "ticTacToe": {
       "name": "Jeu du morpion",
       "description": "Projet réalisé lors de ma formation CDA à l'aide de Vue.js, en utilisant ESLint, TypeScript, Jest et le respect des normes conventionnel de commits afin d'avoir un code propre et maintenable",
-      "todos": [
+      "todo": [
         "ajouter un délai pour la réponse du 'bot'",
         "ajouter la possibilité de jouer en ligne (WebSocket)"
       ]
@@ -143,7 +143,7 @@
     "memory": {
       "name": "Jeu du mémory",
       "description": "Jeu de mémory réalisé a l'aide de jQuery dans lequel l'utilisateur doit faire correspondre des couleurs.",
-      "todos": [
+      "todo": [
         "ajouter un timer",
         "ajouter des thèmes"
       ]
@@ -151,7 +151,7 @@
     "weatherApp": {
       "name": "Application Météo",
       "description": "Application permettant à l'utilisateur de consulter la météo actuelle partout dans le monde, initialement créée en JS vanilla puis simplifiée à l'aide de jQuery,. utilisant une API externe pour les données météorologiques",
-      "todos": [
+      "todo": [
         "ajouter les prévisions pour les prochains jours",
         "ajouter la géolocalisation"
       ]
@@ -167,7 +167,7 @@
     "shiFuMi": {
       "name": "Shi - Fu - Mi",
       "description": "Jeu du pierre feuille ciseaux dans lequel l'utilisateur joue contre un ordinateur (selection aléatoire).",
-      "todos": [
+      "todo": [
         "ajouter la possibilité de jouer en ligne avec un adversaire réel (WebSocket)"
       ]
     }

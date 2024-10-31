@@ -29,6 +29,7 @@ export type project = {
   stack: string[],
   image: string,
   link: string,
+  todo: string[],
 }
 
 export type contactInfo = {
