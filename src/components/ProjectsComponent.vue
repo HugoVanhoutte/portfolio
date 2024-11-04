@@ -46,6 +46,10 @@ const projects: project[] = [
     description: t('projects.ticTacToe.description'),
     image: 'tic-tac-toe.png',
     link: '#',
+    todo: [
+      t('projects.ticTacToe.todos[0]'),
+      t('projects.ticTacToe.todos[1]'),
+    ],
   },
   {
     name: t('projects.memory.name'),
