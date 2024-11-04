@@ -78,9 +78,9 @@ const projects: project[] = [
     todo: [
       t('projects.flagQuiz.todo[0]'),
       t('projects.flagQuiz.todo[1]'),
+      t('projects.flagQuiz.todo[2]'),
     ],
   },
-  // TODO AJOUTER 1 TODO
   {
     name: t('projects.shiFuMi.name'),
     stack: ['JavaScript'],
