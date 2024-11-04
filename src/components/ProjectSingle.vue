@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { defineProps, ref } from 'vue';
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 
 const props = defineProps(['project']);
 const image = `url('/assets/${props.project.image}')`;
@@ -39,7 +42,7 @@ const hideDescription = () => {
             Github >
           </button>
           <button>
-            voir le projet >
+            {{ t('projects.seeProject') }}
           </button>
         </div>
         </div>

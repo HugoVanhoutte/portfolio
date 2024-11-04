@@ -31,5 +31,153 @@
     "hobbies": "Hobbies",
     "downloadResume": "download my resume",
     "contactMe": "contact me"
+  },
+  "skills": {
+    "languages": {
+      "english": "English",
+      "spanish": "Spanish",
+      "russian": "Russian"
+    },
+    "frontEnd": {
+      "name": "front-end",
+      "description": "Build and integration of W3C rules compliant websites"
+    },
+    "backEnd": {
+      "name": "back-end",
+      "description": "development of websites, databases, OOP, data management systems (CRUD), sécurity, deployment"
+    },
+    "otherTools": {
+      "name": "other tools and skills",
+      "description": "Tools and skills related to the job of a web developer"
+    }
+  },
+  "experiences": {
+    "to":  "to",
+    "contractTypes": {
+      "apprenticeship": "apprenticeship",
+      "internship": "internship",
+      "fixedTerm": "fixed term",
+      "permanent": "permanent",
+      "training": "professional training"
+    },
+    "places": {
+      "remote": "remote"
+    },
+    "Adapeco": {
+      "jobTitle": "professional training: software creator and developer",
+      "description": "Obtained a professional training diploma in software creation and development (four-year university level)",
+      "startDate": "july 2024",
+      "endDate": "january 2025"
+    },
+    "Bonduelle": {
+      "jobTitle": "sales assistant, sales administration manager",
+      "description": "invoices, logistics sheets, discounts, input, sending request for proposals to clients, clients orders management.",
+      "startDate": "july 2023",
+      "endDate": "december 2023"
+    },
+    "Upytek": {
+      "jobTitle": "full-stack web developer",
+      "description": "Vue.js training, development and deployment of a node.js API on Google cloud Functions",
+      "startDate": "march 2023",
+      "endDate": "april 2023"
+    },
+    "UpTo": {
+      "jobTitle": "professional training: web and responsive developer",
+      "description": "Obtained a professional training diploma in web and responsive development (two-year university level)",
+      "startDate": "september 2022",
+      "endDate": "june 2023"
+    },
+    "Dublin": {
+      "jobTitle": "Erasmus trip to Dublin",
+      "description": "",
+      "startDate": "september 2019",
+      "endDate": "january 2020"
+    },
+    "Altereos": {
+      "jobTitle": "data inputter",
+      "description": "Checking between data sent by clients and their proofs",
+      "startDate": "july 2019",
+      "endDate": "august 2020"
+    },
+    "LLCE": {
+      "jobTitle": "Foreign and regional languages: English license",
+      "contractType": "DEUG (two years university diploma)",
+      "description": "Obtained a DEUG (two-year university level)",
+      "startDate": "september 2017",
+      "endDate": "june 2021"
+    },
+    "bac": {
+      "jobTitle": "High school diploma (A levels)",
+      "contractType": "scientific studies (biology, Physics, Mathematics)",
+      "description": "Obtained a high school diploma with scientific specialisation",
+      "startDate": "september 2014",
+      "endDate": "july 2017"
+    }
+  },
+  "projects": {
+    "title": "projects",
+    "seeProject": "Go to project >",
+    "RE7": {
+      "name": "RE7",
+      "description": "Content management website, in which users can register, login add recipes, edit and delete them, can also regroup recipes into menus, comments, projects used in the professional training in web and responsive development oral exam.",
+      "todos": [
+        "fix e-mail registration system",
+        "add pictures management system for recipes and user profiles"
+      ]
+    },
+    "graduate": {
+      "description": "Quiz website project in which admins can create and edit quiz, check student results, users can answer quiz and check their own results.",
+      "todos": [
+        "add more results stats",
+        "add pictures to quiz",
+        "add student groups"
+      ]
+    },
+    "ticTacToe": {
+      "name": "Tic tac toe",
+      "description": "Projects created during my software creator and developer professional training, using Vue.js, ESLint, TypeScript, Jest and Conventional Commits in order to respect clean code rules for a more maintenable and readable code",
+      "todos": [
+        "add a small delay before 'bot' input",
+        "add online play (WebSocket)"
+      ]
+    },
+    "memory": {
+      "name": "memory game",
+      "description": "Memory game, made with jQuery in which the user has to match colored squares.",
+      "todos": [
+        "add a timer",
+        "add themes"
+      ]
+    },
+    "weatherApp": {
+      "name": "Weather app",
+      "description": "App allowing the user to check the weather anywhere in the world in real-time, First made in vanilla JS and improved with jQuery. Using an external API for weather data.",
+      "todos": [
+        "add weather forecast for next days",
+        "add users' location"
+      ]
+    },
+    "flagQuiz": {
+      "name": "Flags quiz",
+      "description": "Quiz app inn which the user has to find the country or state whose flag appears on screens, Using an external API for flags and countries/states names.",
+      "todo": [
+        "add a timer",
+        "add an area selector for flags",
+        "add other languages (i18n)"
+      ]
+    },
+    "shiFuMi": {
+      "name": "Rock, paper, scissors",
+      "description": "Rock, paper, scissors game in which the user plays against a 'bot' (random).",
+      "todos": [
+        "add inline play against real players (WebSocket)"
+      ]
+    }
+  },
+  "contact": {
+    "contactMe": "Please feel free to contact me",
+    "text": "I am currently looking for an internship from november 25th to december 20th",
+    "jobSearchList": ""
   }
 }
+

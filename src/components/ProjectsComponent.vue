@@ -48,6 +48,7 @@ const projects: project[] = [
     image: 'flagQuiz.png',
     link: '#',
   },
+  // TODO AJOUTER 1 TODO
   {
     name: t('projects.shiFuMi.name'),
     stack: ['JavaScript'],
