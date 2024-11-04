@@ -80,6 +80,7 @@ const projects: project[] = [
       t('projects.flagQuiz.todo[1]'),
     ],
   },
+  // TODO AJOUTER 1 TODO
   {
     name: t('projects.shiFuMi.name'),
     stack: ['JavaScript'],

@@ -116,6 +116,7 @@
   },
   "projects": {
     "title": "réalisations",
+    "seeProject": "Voir le projet >",
     "RE7": {
       "name": "RE7",
       "description": "Projet de site de gestion de contenu dans lequel l'utilisateur peut créer un compte, se connecter, créer des recettes, les modifier, les supprimer. possibilité également de commenter les recettes et de créer des menus regroupant plusieurs recettes. Projet présenté au jury pour l'obtention du TP DWWM.",
@@ -162,7 +163,8 @@
       "description": "Application de quiz dans laquelle l'utilisateur doit trouver les noms des pays ou états auxquels appartiennent les drapeaux affichés à l'écran, utilisation d'une API externe pour les drapeaux et le nom des pays",
       "todo": [
         "ajouter un timer",
-        "ajouter la possibilité de choisir la région du monde pour les drapeaux"
+        "ajouter la possibilité de choisir la région du monde pour les drapeaux",
+        "ajouter d'autres langues (i18n)"
       ]
     },
     "shiFuMi": {
