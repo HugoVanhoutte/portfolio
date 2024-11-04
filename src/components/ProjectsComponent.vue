@@ -46,6 +46,10 @@ const projects: project[] = [
     description: t('projects.ticTacToe.description'),
     image: 'tic-tac-toe.png',
     link: '#',
+    todo: [
+      t('projects.ticTacToe.todos[0]'),
+      t('projects.ticTacToe.todos[1]'),
+    ],
   },
   {
     name: t('projects.memory.name'),
@@ -78,9 +82,9 @@ const projects: project[] = [
     todo: [
       t('projects.flagQuiz.todo[0]'),
       t('projects.flagQuiz.todo[1]'),
+      t('projects.flagQuiz.todo[2]'),
     ],
   },
-  // TODO AJOUTER 1 TODO
   {
     name: t('projects.shiFuMi.name'),
     stack: ['JavaScript'],
