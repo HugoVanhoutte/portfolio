@@ -120,14 +120,14 @@
     "RE7": {
       "name": "RE7",
       "description": "Content management website, in which users can register, login add recipes, edit and delete them, can also regroup recipes into menus, comments, projects used in the professional training in web and responsive development oral exam.",
-      "todos": [
+      "todo": [
         "fix e-mail registration system",
         "add pictures management system for recipes and user profiles"
       ]
     },
     "graduate": {
       "description": "Quiz website project in which admins can create and edit quiz, check student results, users can answer quiz and check their own results.",
-      "todos": [
+      "todo": [
         "add more results stats",
         "add pictures to quiz",
         "add student groups"
@@ -136,7 +136,7 @@
     "ticTacToe": {
       "name": "Tic tac toe",
       "description": "Projects created during my software creator and developer professional training, using Vue.js, ESLint, TypeScript, Jest and Conventional Commits in order to respect clean code rules for a more maintenable and readable code",
-      "todos": [
+      "todo": [
         "add a small delay before 'bot' input",
         "add online play (WebSocket)"
       ]
@@ -144,7 +144,7 @@
     "memory": {
       "name": "memory game",
       "description": "Memory game, made with jQuery in which the user has to match colored squares.",
-      "todos": [
+      "todo": [
         "add a timer",
         "add themes"
       ]
@@ -169,7 +169,7 @@
     "shiFuMi": {
       "name": "Rock, paper, scissors",
       "description": "Rock, paper, scissors game in which the user plays against a 'bot' (random).",
-      "todos": [
+      "todo": [
         "add inline play against real players (WebSocket)"
       ]
     }
