@@ -49,7 +49,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "dev2",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "ci-cd",
     "last_opened_file_path": "C:/Users/thehu/PhpstormProjects/portfolio/docs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -72,8 +73,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PS-241.18034.69" />
-        <option value="bundled-php-predefined-ba97393d7c68-48a1a656d44e-com.jetbrains.php.sharedIndexes-PS-241.18034.69" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-WS-243.21565.180" />
       </set>
     </attachedChunks>
   </component>
@@ -90,6 +90,7 @@
       <workItem from="1717594571683" duration="1218000" />
       <workItem from="1717935240498" duration="12000" />
       <workItem from="1728050362159" duration="567000" />
+      <workItem from="1732046619089" duration="697000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
