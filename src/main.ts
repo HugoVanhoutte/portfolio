@@ -9,8 +9,8 @@ import fr from './locales/fr.json';
 
 const i18n = createI18n({
   legacy: false,
-  // locale: navigator.language,
-  locale: 'en',
+  locale: navigator.language,
+  // locale: 'en',
   fallbackLocale: 'en',
   messages: { en, fr },
 });

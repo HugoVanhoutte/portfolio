@@ -31,7 +31,12 @@ const hideDescription = () => {
         </div>
           <div class="stack">
             <div class="tech" v-for="tech in props.project.stack" :key="project.name + '-' + tech ">
-              {{ tech }}
+<!--              <i class="fa-brands fa-php" v-if="tech === 'PHP'"/>-->
+<!--              <i class="fa-brands fa-bootstrap" v-if="tech === 'Bootstrap'"/>-->
+<!--              <i class="fa-brands fa-vuejs" v-if="tech === 'Vue.js'"/>-->
+<!--              <i class="fa-brands fa-node-js" v-if="tech === 'Node.js'"/>-->
+<!--              <i class="fa-brands fa-js" v-if="tech === 'JavaScript'"/>-->
+              <p>{{ tech }}</p>
             </div>
           </div>
         <div class="text">
@@ -96,8 +101,14 @@ const hideDescription = () => {
           background-color: $blue;
           border-radius: .5rem;
           color: $light;
-          padding: 0.25rem;
+          padding: 0.5rem;
           margin: 1rem 0;
+          display: flex;
+          align-items: center;
+          i {
+            font-size: 2rem;
+            margin-right: .5rem;
+          }
         }
       }
       .text {
