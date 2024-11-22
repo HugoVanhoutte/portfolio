@@ -26,8 +26,8 @@ const goto = () => {
     :style="{ backgroundImage: image }"
     @mouseenter="displayDescription"
     @mouseleave="hideDescription"
-    @focusin="console.log('tg')"
-    @focusout="console.log('tg')"
+    @focusin="displayDescription"
+    @focusout="hideDescription"
   >
       <div class="description" ref="descriptionRef">
         <div class="title">
