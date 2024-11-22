@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import { defineProps, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
-import { useRouter } from 'vue-router';
-
-const router = useRouter();
 const { t } = useI18n();
 
 const props = defineProps(['project']);
@@ -15,6 +12,10 @@ const displayDescription = () => {
 const hideDescription = () => {
   (descriptionRef.value as HTMLElement).style.transform = 'translateY(85%)';
 };
+
+const goto = () => {
+  window.location.assign(props.project.link);
+}
 
 </script>
 
@@ -52,7 +53,7 @@ const hideDescription = () => {
           <button>
             Github >
           </button>
-          <button @click="router.push(props.project.link)">
+          <button @click="goto()">
             {{ t('projects.seeProject') }}
           </button>
         </div>
