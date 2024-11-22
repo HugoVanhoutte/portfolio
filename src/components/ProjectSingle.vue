@@ -15,7 +15,7 @@ const hideDescription = () => {
 };
 
 const goto = () => {
-  window.location.assign(props.project.link);
+  window.location.assign(`https://www.${props.project.link}`);
 };
 
 </script>
