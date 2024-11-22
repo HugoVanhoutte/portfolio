@@ -1,0 +1,37 @@
+name: cd-portfolio
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: checkout repository
+      uses: actions/checkout@v3
+
+    - name: set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '22'
+
+    - name: install front dependencies
+      run: npm install
+
+    - name: build frontend
+      run: npm run build
+      
+    - name: Deploy via SFTP
+      uses: appleboy/scp-action@v0.1.5
+      with:
+        debug: true
+        host: ${{ secrets.FTP_HOST }}
+        username: ${{ secrets.FTP_USER }}
+        key: ${{ secrets.SSH_KEY }}
+        port: 22
+        source: "dist/*"
+        target: "/var/www/hugo-vanhoutte.dev/"
