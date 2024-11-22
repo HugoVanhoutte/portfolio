@@ -34,7 +34,7 @@ const projects: project[] = [
     stack: ['Vue.js', 'TypeScript'],
     description: t('projects.ticTacToe.description'),
     image: 'tic-tac-toe.png',
-    link: '#',
+    link: 'tictactoe.hugo-vanhoutte.dev',
     todo: [
       t('projects.ticTacToe.todo[0]'),
       t('projects.ticTacToe.todo[1]'),
@@ -45,7 +45,7 @@ const projects: project[] = [
     stack: ['jQuery'],
     description: t('projects.memory.description'),
     image: 'memory.png',
-    link: '#',
+    link: 'memory.hugo-vanhoutte.dev',
     todo: [
       t('projects.memory.todo[0]'),
       t('projects.memory.todo[1]'),
@@ -56,7 +56,7 @@ const projects: project[] = [
     stack: ['jQuery', 'REST API'],
     description: t('projects.weatherApp.description'),
     image: 'weatherApp.png',
-    link: '#',
+    link: 'weather-app.hugo-vanhoutte.dev',
     todo: [
       t('projects.weatherApp.todo[0]'),
       t('projects.weatherApp.todo[1]'),
@@ -67,7 +67,7 @@ const projects: project[] = [
     stack: ['jQuery', 'REST API'],
     description: t('projects.flagQuiz.description'),
     image: 'flagQuiz.png',
-    link: '#',
+    link: 'flag-quiz.hugo-vanhoutte.dev',
     todo: [
       t('projects.flagQuiz.todo[0]'),
       t('projects.flagQuiz.todo[1]'),
@@ -79,7 +79,7 @@ const projects: project[] = [
     stack: ['JavaScript'],
     description: t('projects.shiFuMi.description'),
     image: 'shiFuMi.png',
-    link: '#',
+    link: 'shifumi.hugo-vanhoutte.dev',
     todo: [
       t('projects.shiFuMi.todo[0]'),
     ],
