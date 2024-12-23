@@ -7,6 +7,17 @@ const { t } = useI18n();
 
 const experiences: experience[] = [
   {
+    icon: 'fa-solid fa-code',
+    jobTitle: t('experiences.LCDA.jobTitle'),
+    contractType: t('experiences.contractTypes.internship'),
+    place: 'Douchy-les-Mines',
+    company: 'Le coin des Artistes',
+    description: t('experiences.LCDA.description'),
+    startDate: t('experiences.LCDA.startDate'),
+    endDate: t('experiences.LCDA.endDate'),
+    color: '$green',
+  },
+  {
     icon: 'fa-solid fa-graduation-cap',
     jobTitle: t('experiences.Adapeco.jobTitle'),
     contractType: t('experiences.contractTypes.training'),
