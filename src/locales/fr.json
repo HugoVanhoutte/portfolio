@@ -63,6 +63,12 @@
     "places": {
       "remote": "en distanciel"
     },
+    "LCDA": {
+      "jobTitle": "développeur web full-stack",
+      "description": "Réalisation d'un site vitrine et e-commerce, avec système de gestion de contenu et boutique pour un salon de tatouages et barber",
+      "startDate": "novembre 2024",
+      "endDate": "décembre 2024"
+    },
     "Adapeco": {
       "jobTitle": "tp concépteur développeur d'applications",
       "description": "Obtention du titre professionnel Concepteur\nDéveloppeur d'Application (bac +4)",
