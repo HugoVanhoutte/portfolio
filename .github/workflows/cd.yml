@@ -33,8 +33,8 @@ jobs:
         username: ${{ secrets.FTP_USER }}
         password: ${{ secrets.SSH_PASSWORD }}
         port: 22
-        source: "dist/*"  # Nous envoyons uniquement les fichiers dans dist/
-        target: "/var/www/portfolio/public/"  # Le dossier cible où les fichiers doivent aller
+        source: "dist/*"
+        target: "/var/www/portfolio/public/"
 
     # Optional: Supprimer le dossier dist après avoir déployé
     - name: Clean up dist folder on server
@@ -45,9 +45,4 @@ jobs:
         password: ${{ secrets.SSH_PASSWORD }}
         port: 22
         script: |
-          # Vérifier si le dossier dist existe avant de le supprimer
-          if [ -d "/var/www/portfolio/public/dist" ]; then
-            sudo rm -rf /var/www/portfolio/public/dist/  # Supprimer le dossier dist s'il existe
-          else
-            echo "Le dossier dist n'existe pas, rien à supprimer."
-          fi
+          sudo rm -rf /var/www/portfolio/dist/
