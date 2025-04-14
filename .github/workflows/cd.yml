@@ -33,9 +33,9 @@ jobs:
         password: ${{ secrets.SSH_PASSWORD }}
         port: 22
         script: |
-          mv /var/www/hugo-vanhoutte.dev/dist/* /var/www/hugo-vanhoutte.dev/
+          mv /var/www/portfolio/dist/* /var/www/portfolio/public/
           # Remove the empty dist folder
-          sudo rm -rf /var/www/hugo-vanhoutte.dev/*
+          sudo rm -rf /var/www/portfolio/*
           
     - name: Deploy via SFTP
       uses: appleboy/scp-action@v0.1.5
@@ -46,7 +46,7 @@ jobs:
         password: ${{ secrets.SSH_PASSWORD }}
         port: 22
         source: "dist/*"
-        target: "/var/www/hugo-vanhoutte.dev/"
+        target: "/var/www/portfolio/public/"
 
     - name: Execute SSH commands to move content
       uses: appleboy/ssh-action@v0.1.5
@@ -57,6 +57,6 @@ jobs:
         port: 22
         script: |
           # Move contents of dist to target directory
-          mv /var/www/hugo-vanhoutte.dev/dist/* /var/www/hugo-vanhoutte.dev/
+          mv /var/www/portfolio/dist/* /var/www/portfolio/public/
           # Remove the empty dist folder
-          sudo rm -rf /var/www/hugo-vanhoutte.dev/dist/
+          sudo rm -rf /var/www/portfolio/dist/
