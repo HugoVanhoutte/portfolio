@@ -45,4 +45,4 @@ jobs:
         password: ${{ secrets.SSH_PASSWORD }}
         port: 22
         script: |
-          sudo rm -rf /var/www/portfolio/dist/
+          sudo rm -rf /var/www/portfolio/public/dist/
