@@ -30,7 +30,7 @@ jobs:
       with:
         host: ${{ secrets.FTP_HOST }}
         username: ${{ secrets.FTP_USER }}
-        key: ${{ secrets.SSH_KEY }}
+        password: ${{ secrets.SSH_PASSWORD }}
         port: 22
         script: |
           mv /var/www/hugo-vanhoutte.dev/dist/* /var/www/hugo-vanhoutte.dev/
@@ -43,7 +43,7 @@ jobs:
         debug: true
         host: ${{ secrets.FTP_HOST }}
         username: ${{ secrets.FTP_USER }}
-        key: ${{ secrets.SSH_KEY }}
+        password: ${{ secrets.SSH_PASSWORD }}
         port: 22
         source: "dist/*"
         target: "/var/www/hugo-vanhoutte.dev/"
@@ -53,7 +53,7 @@ jobs:
       with:
         host: ${{ secrets.FTP_HOST }}
         username: ${{ secrets.FTP_USER }}
-        key: ${{ secrets.SSH_KEY }}
+        password: ${{ secrets.SSH_PASSWORD }}
         port: 22
         script: |
           # Move contents of dist to target directory
