@@ -45,4 +45,9 @@ jobs:
         password: ${{ secrets.SSH_PASSWORD }}
         port: 22
         script: |
-          sudo rm -rf /var/www/portfolio/dist/  # Supprime dist si nécessaire (optionnel)
+          # Vérifier si le dossier dist existe avant de le supprimer
+          if [ -d "/var/www/portfolio/dist" ]; then
+            sudo rm -rf /var/www/portfolio/dist/  # Supprimer le dossier dist s'il existe
+          else
+            echo "Le dossier dist n'existe pas, rien à supprimer."
+          fi
