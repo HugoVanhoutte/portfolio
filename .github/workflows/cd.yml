@@ -11,33 +11,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: checkout repository
+    - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: set up Node.js
+    - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
         node-version: '22'
 
-    - name: install front dependencies
+    - name: Install front dependencies
       run: npm install
 
-    - name: build frontend
+    - name: Build frontend
       run: npm run build
-      
-    - name: Execute SSH commands to resetfolder
-      uses: appleboy/ssh-action@v0.1.5
-      with:
-        host: ${{ secrets.FTP_HOST }}
-        username: ${{ secrets.FTP_USER }}
-        password: ${{ secrets.SSH_PASSWORD }}
-        port: 22
-        script: |
-          mv /var/www/portfolio/dist/* /var/www/portfolio/public/
-          # Remove the empty dist folder
-          sudo rm -rf /var/www/portfolio/*
-          
-    - name: Deploy via SFTP
+
+    - name: Deploy via SFTP (move dist contents to public)
       uses: appleboy/scp-action@v0.1.5
       with:
         debug: true
@@ -45,10 +33,11 @@ jobs:
         username: ${{ secrets.FTP_USER }}
         password: ${{ secrets.SSH_PASSWORD }}
         port: 22
-        source: "dist/*"
-        target: "/var/www/portfolio/public/"
+        source: "dist/*"  # Nous envoyons uniquement les fichiers dans dist/
+        target: "/var/www/portfolio/public/"  # Le dossier cible où les fichiers doivent aller
 
-    - name: Execute SSH commands to move content
+    # Optional: Supprimer le dossier dist après avoir déployé
+    - name: Clean up dist folder on server
       uses: appleboy/ssh-action@v0.1.5
       with:
         host: ${{ secrets.FTP_HOST }}
@@ -56,7 +45,4 @@ jobs:
         password: ${{ secrets.SSH_PASSWORD }}
         port: 22
         script: |
-          # Move contents of dist to target directory
-          mv /var/www/portfolio/dist/* /var/www/portfolio/public/
-          # Remove the empty dist folder
-          sudo rm -rf /var/www/portfolio/dist/
+          sudo rm -rf /var/www/portfolio/dist/  # Supprime dist si nécessaire (optionnel)
