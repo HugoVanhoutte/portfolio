@@ -22,7 +22,7 @@ const projects: project[] = [
     stack: ['Vue.js', 'Node.js', 'Express', 'MySQL'],
     description: t('projects.graduate.description'),
     image: 'graduate.png',
-    link: '#',
+    link: 'graduate.hugo-vanhoutte.dev',
     todo: [
       t('projects.graduate.todo[0]'),
       t('projects.graduate.todo[1]'),
