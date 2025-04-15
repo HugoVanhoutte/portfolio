@@ -11,7 +11,7 @@ const projects: project[] = [
     stack: ['Bootstrap', 'PHP', 'MySQL'],
     description: t('projects.RE7.description'),
     image: 'RE7.png',
-    link: '#',
+    link: 're7.hugo-vanhoutte.dev',
     todo: [
       t('projects.RE7.todo[0]'),
       t('projects.RE7.todo[1]'),
