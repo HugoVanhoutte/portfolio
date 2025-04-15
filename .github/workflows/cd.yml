@@ -33,7 +33,8 @@ jobs:
         username: ${{ secrets.FTP_USER }}
         password: ${{ secrets.SSH_PASSWORD }}
         port: 22
-        source: "dist/*"
+        source: "dist/**"
+        strip_components: 1
         target: "/var/www/portfolio/public/"
 
     # Optional: Supprimer le dossier dist après avoir déployé
