@@ -36,14 +36,3 @@ jobs:
         source: "dist/**"
         strip_components: 1
         target: "/var/www/portfolio/public/"
-
-    # Optional: Supprimer le dossier dist après avoir déployé
-    - name: Clean up dist folder on server
-      uses: appleboy/ssh-action@v0.1.5
-      with:
-        host: ${{ secrets.FTP_HOST }}
-        username: ${{ secrets.FTP_USER }}
-        password: ${{ secrets.SSH_PASSWORD }}
-        port: 22
-        script: |
-          sudo rm -rf /var/www/portfolio/public/dist/
