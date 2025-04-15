@@ -31,7 +31,7 @@ jobs:
         debug: true
         host: ${{ secrets.FTP_HOST }}
         username: ${{ secrets.FTP_USER }}
-        password: ${{ secrets.SSH_PASSWORD }}
+        key: ${{ secrets.SSH_KEY }}
         port: 22
         source: "dist/**"
         strip_components: 1
