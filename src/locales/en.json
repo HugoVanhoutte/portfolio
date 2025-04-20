@@ -176,7 +176,8 @@
       "name": "Rock, paper, scissors",
       "description": "Rock, paper, scissors game in which the user plays against a 'bot' (random).",
       "todo": [
-        "add inline play against real players (WebSocket)"
+        "add inline play against real players (WebSocket)",
+        "add history system"
       ]
     }
   },
