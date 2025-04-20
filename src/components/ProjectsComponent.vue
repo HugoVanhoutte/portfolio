@@ -82,6 +82,7 @@ const projects: project[] = [
     link: 'shifumi.hugo-vanhoutte.dev',
     todo: [
       t('projects.shiFuMi.todo[0]'),
+      t('projects.shiFuMi.todo[1]'),
     ],
   },
 ];
