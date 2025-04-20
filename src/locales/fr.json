@@ -177,7 +177,8 @@
       "name": "Shi - Fu - Mi",
       "description": "Jeu du pierre feuille ciseaux dans lequel l'utilisateur joue contre un ordinateur (selection aléatoire).",
       "todo": [
-        "ajouter la possibilité de jouer en ligne avec un adversaire réel (WebSocket)"
+        "ajouter la possibilité de jouer en ligne avec un adversaire réel (WebSocket)",
+        "ajouter systeme d'historique des parties"
       ]
     }
   },
